@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -28,12 +29,26 @@
 
         thead, tfoot {
             background-color: gray;
-            color: white;
-            
+            color: white;   
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -3px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
-            text-align: right;;
+            text-align: right;
         }
     </style>
 </head>
@@ -91,6 +106,38 @@
                 <td>Ceará</td>
                 <td class="num">9 132 078</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 132 078</td>
+            </tr>
 
         </tbody>
         <tfoot>
@@ -100,5 +147,15 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, architecto obcaecati? Numquam, modi saepe? Nemo dolores ullam sapiente perferendis eligendi. Earum consequatur fugit, sunt delectus id neque tempora iste harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur odio architecto fugit molestiae totam libero reiciendis atque. Temporibus assumenda, magnam deleniti nulla ipsum officia nisi dignissimos praesentium molestias quia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe iste dolorem at totam recusandae pariatur accusamus magnam delectus minus neque atque fugiat, quos voluptatibus repudiandae. Delectus perspiciatis recusandae error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero inventore, dicta dolores commodi eveniet, doloremque non, provident corrupti fugiat nesciunt atque officia. Impedit quam vero, mollitia rem ipsum incidunt?</p>
 </body>
 </html>
