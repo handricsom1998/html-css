@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: yellow;
+        }
+        #inome, #imedia, #imes, #idia, #ihora {
+            height: 20px;
+            width: 200px;
+            color: red;
+            background-color: blue;
+
+            
+            position: absolute;
+            left: 150px;
+        }
+
+        input.botao {
+            color: yellow;
+            background-color: black;
+            margin-top: 20px;
+            position: relative;
+            display: inline;
+            left: 120px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="Nome" id="inome" required minlength="8" maxlength="15" placeholder="nome completo" autocomplete="name" value="anderson"required>
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+        </p>
+        <p>
+            <label for="imes">Mês</label>
+            <input type="month" name="mes" id="imes" value="2023-10">
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="Dia" id="idia" value="2023-10-04">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora" value="20:10">
+        </p>
+        <p>
+            <input class="botao" type="submit" value="Enviar"> <input class="botao" type="reset" value="Limpar">
+        </p>
+        
+    </form>
+    
+</body>
+</html>
